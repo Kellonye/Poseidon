@@ -1,0 +1,15 @@
+Question 2:
+Write a function that takes a sentence, capitalizes the words of the sentence (first letter of all the words), and returns the transformed sentence.
+For example: function_name("a short sentence") should return "A Short Sentence"
+
+
+
+Ans 2:
+
+const mySentence = "iheme morgan is a political jobber and tout";
+const words = mySentence.split(" ");
+words.map((word) => {
+return word[0].toUpperCase() + word.substring(1);
+}).join(" ");
+
+// this will print 'Iheme Morgan Is A Political Jobber And Tout' to the console.
