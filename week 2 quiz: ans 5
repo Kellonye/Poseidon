@@ -1,0 +1,27 @@
+Question 5:
+Define a function that takes a string text and returns that string in reverse.
+For example: function_name("abcd") should return "dcba".
+You may get a string containing special characters (!, @, or #).
+
+
+
+Ans 5:
+
+
+function reverseString(str) {
+
+    // empty string
+    let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+
+// take input from the user
+const string = prompt('Enter a string: ');
+
+const result = reverseString(string);
+alert(result);
+
+//running the function on the console will prompt the user to provide a string imput. such that a strig imput of 'JohnKoto' will output 'otoKnhoJ'
