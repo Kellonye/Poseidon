@@ -24,7 +24,11 @@ second consideration:
 or a more complex one like this below;
 
 
-	var myNumList = [30, 18, 7, 13, 12]
+const sumN = (n) => {
+// the number'n' will be entered as a string value and converted into an array of numbers below:
+
+var myNumList = n.split("").map(Number);
+
      
     // need to create a variable to store the sum
     	var sum = 0;
@@ -33,7 +37,7 @@ or a more complex one like this below;
     	for (let i = 0; i < myNumList.length; i++) {
         sum += myNumList[i];
     }
-     
+        console.log(myNumList);
     	console.log(sum);
-      
-    //such that myNumList will print, to the console, the value '80'
+}
+// a number string of '12345' will out put an array of numbers[1, 2, 3, 4, 5] and '15' as the sum of numbers in the array.
