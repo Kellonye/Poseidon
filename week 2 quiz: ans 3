@@ -1,0 +1,20 @@
+/*Question 3:
+Define a function that has two arguments called sequence and item.
+Return the number of times the item occurs in the list.
+For example: function_name([1, 2, 1, 1], 1) should return 3 (because 1 appears 3 times in the list).
+Your function should return an integer.
+*/
+
+
+
+ANSWER:
+
+seqItem = (arr, v) => {
+    let n = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {n++}
+    }
+    return n;
+}
+
+//seqItem([0, 8, 1, 3, 8, 1, 6, 4, 2, 9, 6], 1); wil return 2 as the total iteration of '1'
