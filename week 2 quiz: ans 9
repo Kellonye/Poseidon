@@ -1,0 +1,17 @@
+Question 9:
+Write a function that recieves: a sentence, a word in the sentence and a replacement for that word as arguments. This function should perform a search and replace on the sentence using the arguments provided and return the new sentence.
+For example: function_name("He is Sleeping on the couch", "Sleeping", "sitting") should return He is sitting on the couch
+
+
+
+
+ANSWER:
+
+replaceWord = (strgrp, str, nstr) => {
+    let nStrGrp = strgrp.split(' ');
+    fnstrgrp= nStrGrp.replace(str, nstr);
+    for (i = 0; i < nStrGrp.length; i++) {
+        nStrGrp.replace(str, nstr);
+    } return fnstrgrp;
+
+}
